@@ -22,10 +22,10 @@
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div ng-show="{{ENV === 'dev'}}" class="development" ng-cloak></div>
-    <div ui-view="navbar" ng-cloak></div>
+    <div ng-show="{{false}}" class="development" ng-cloak></div>
+    <div ui-view="front-navbar" ng-cloak></div>
     <div class="container">
-        <div class="well" ui-view="content"></div>
+        <div class="well" ui-view="front-content"></div>
 
         <div class="footer" ng-cloak>
             <p translate="footer">This is your footer</p>
@@ -70,7 +70,7 @@
 
     <!-- build:js app/app.js  -->
     <!-- inject:js -->
-    <script src="app/app.module.js"></script>
+    <script src="app/front/front.app.module.js"></script>
     <script src="app/account/reset/request/reset.request.state.js"></script>
     <script src="app/account/reset/request/reset.request.controller.js"></script>
     <script src="app/account/reset/finish/reset.finish.state.js"></script>
@@ -168,8 +168,13 @@
     <script src="app/entities/entity.state.js"></script>
     <script src="app/admin/admin.state.js"></script>
     <script src="app/account/account.state.js"></script>
-    <script src="app/app.state.js"></script>
-    <script src="app/app.constants.js"></script>
+
+
+    <script src="app/front/front.app.state.js"></script>
+    <script src="app/front/front.app.constants.js"></script>
+    <script src="app/front/front.home.controller.js"></script>
+    <script src="app/front/front.home.state.js"></script>
+    <script src="app/front/front.navbar.controller.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
