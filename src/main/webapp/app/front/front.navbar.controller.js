@@ -10,12 +10,12 @@
     function FrontNavbarController ($location, $state, Auth, Principal, ENV, LoginService) {
         var vm = this;
 
-        //vm.navCollapsed = true;
-        //vm.isAuthenticated = Principal.isAuthenticated;
+        vm.navCollapsed = true;
+        vm.isAuthenticated = Principal.isAuthenticated;
         //vm.inProduction = ENV === 'prod';
         //vm.login = login;
         //vm.logout = logout;
-        //vm.$state = $state;
+        vm.$state = $state;
         //
         //function login () {
         //    LoginService.open();

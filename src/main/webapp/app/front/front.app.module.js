@@ -3,9 +3,9 @@
 
     angular
         .module('eheartApp', [
-            'ngStorage', 
+            'ngStorage',
             'tmh.dynamicLocale',
-            'pascalprecht.translate', 
+            'pascalprecht.translate',
             'ngResource',
             'ngCookies',
             'ngAria',
@@ -26,4 +26,5 @@
         stateHandler.initialize();
         translationHandler.initialize();
     }
+
 })();
