@@ -1,5 +1,5 @@
 body {
-    background: #fafafa;
+    background: #FFFFFF;/*#fafafa*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
@@ -333,9 +333,14 @@ ul#strengthBar {
     background-color: #006EBC;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: #72B142;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
 .well {
     padding: 0;
     background-color: #ffffff;
@@ -348,4 +353,124 @@ ul#strengthBar {
 
 .carousel-control.right {
     background-image: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #006EBC;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+
+.promos {
+    max-width: 2560px;
+    margin: 0 auto;
+    border-top: 2px solid #fff
+}
+
+.promos ul {
+    margin: 0;
+    padding: 0;
+}
+
+.promos li {
+    overflow: hidden;
+    list-style: none;
+    max-height: 200px
+}
+
+@media only screen and (max-width: 767px) {
+    .promos li {
+        border-bottom: 2px solid #fff
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .promos .promo-tile-0,.promos .promo-tile-1 {
+        border-bottom: 2px solid #fff
+    }
+}
+.promos span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0
+}
+
+.promos .promo {
+    display: block;
+    min-height: 200px;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .promos .promo {
+        border-right: none
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promos .promo-tile-1 .promo {
+        border-right: none
+    }
+}
+
+.promos .promo-tile-3 .promo {
+    border-right: none
+}
+
+.large-3 {
+    width: 25%;
+}
+
+.column {
+    position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.promo-iphone_6s {
+    background-image: url('../images/front/ipad2.png');
+    width: auto;
+    height: 200px;
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-iphone_6s {
+        background-image: url('../images/front/iphone_6s_medium.jpg');
+        background-size: 640px 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+a:visited, a:link, a:active {
+    text-decoration: none;
 }

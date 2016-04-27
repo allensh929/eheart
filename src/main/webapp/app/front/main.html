@@ -1,6 +1,6 @@
 
 <div id="myCarousel" >
-    <div style="min-height: 305px">
+    <div style="min-height: 200px">
         <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                 <img ng-src="{{slide.image}}" style="margin:auto;">
@@ -12,10 +12,28 @@
         </uib-carousel>
     </div>
 </div>
-<script>
-//    $('#myCarousel').carousel({
-//        interval : 3000
-//    })
+<section class="promos" id="promos">
+    <ul>
+        <li class="promo-tile-0 column large-3 medium-6 small-12">
+            <a class="promo promo-0 promo-iphone_6s">
+                <span>iPhone 6s. 3D Touch. 12MP photos. 4K video. One powerful phone.</span>
+            </a>
+        </li>
+        <li class="promo-tile-1 column large-3 medium-6 small-12">
+            <a class="promo promo-0 promo-iphone_6s">
+                <span>iPhone 6s. 3D Touch. 12MP photos. 4K video. One powerful phone.</span>
+            </a>
+        </li>
+        <li class="promo-tile-2 column large-3 medium-6 small-12">
+            <a class="promo promo-0 promo-iphone_6s">
+                <span>iPhone 6s. 3D Touch. 12MP photos. 4K video. One powerful phone.</span>
+            </a>
+        </li>
+        <li class="promo-tile-3 column large-3 medium-6 small-12">
+            <a class="promo promo-0 promo-iphone_6s">
+                <span>iPhone 6s. 3D Touch. 12MP photos. 4K video. One powerful phone.</span>
+            </a>
+        </li>
 
-
-</script>
+    </ul>
+</section>
