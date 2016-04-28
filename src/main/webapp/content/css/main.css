@@ -256,6 +256,10 @@ ul#strengthBar {
     padding: 0 !important;
 }
 
+.no-margin {
+    margin: 0 !important;
+}
+
 /* bootstrap 3 input-group 100% width
    http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
 .width-min {
@@ -379,138 +383,40 @@ ul#strengthBar {
     height: 78%;
 }
 
-.promos {
-    max-width: 2560px;
-    margin: 0 auto;
-    border-top: 2px solid #fff
-}
-
-.promos ul {
-    margin: 0;
-    padding: 0;
-}
-
-.promos li {
-    overflow: hidden;
-    list-style: none;
-    max-height: 200px
-}
-
-@media only screen and (max-width: 767px) {
-    .promos li {
-        border-bottom: 2px solid #fff
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .promos .promo-tile-0, .promos .promo-tile-1 {
-        border-bottom: 2px solid #fff
-    }
-}
-
-.promos span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-    clip-path: inset(0px 0px 99.9% 99.9%);
-    overflow: hidden;
-    height: 1px;
-    width: 1px;
-    padding: 0;
-    border: 0
-}
-
-.promos .promo {
-    display: block;
-    min-height: 200px;
-    border-right: 2px solid #fff;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-}
-
-@media only screen and (max-width: 767px) {
-    .promos .promo {
-        border-right: none
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .promos .promo-tile-1 .promo {
-        border-right: none
-    }
-}
-
-.promos .promo-tile-3 .promo {
-    border-right: none
-}
-
-@media only screen and (max-width: 767px) {
-
-    #myCarousel {
-        height: 50%;
-        min-height:391px;
-    }
-    .small-12 {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-    .medium-6 {
-        width: 50%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-
-
-    #myCarousel {
-        height: 78%;
-    }
-
-    .large-3 {
-        width: 25%;
-    }
-}
-
-.column {
-    position: relative;
-    z-index: 1;
-    min-height: 2px;
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
 .promo-iphone_6s {
-    background-image: url('../images/front/iphone_6s_medium.jpg');
+    display: block;
+    border-right: 2px solid #fff;
+    background-image: url('../images/front/iphone_6s_large.jpg');
+    background-size: cover;
     width: auto;
     height: 200px;
 }
 
-@media only screen and (max-width: 1441px) {
-    .promo-iphone_6s {
-        background-image: url('../images/front/iphone_6s_large.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-}
-
-@media only screen and (min-width: 1442px) {
-    .promo-iphone_6s {
-        background-image: url('../images/front/iphone_6s_medium.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-}
-
-a:visited, a:link, a:active {
+a:visited, a:link, a:active, a:hover {
     text-decoration: none;
+}
+
+.eh-footer {
+    background-color: #006EBC;
+    color: #000;
+    min-height: 200px;
+}
+.eh-footer-logo {
+    text-align: center;
+    margin-top: 50px;
+}
+.eh-footer-info {
+    text-align: center;
+    margin-top: 20px;
+}
+.eh-footer div > a {
+    color: #000;
+}
+.eh-footer div > ul > li > a {
+    color: #000;
+}
+
+.eh-footer div > ul,  .eh-footer div > ul > li{
+    padding-left: 0;
+    display: inline;
 }

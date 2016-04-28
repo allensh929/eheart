@@ -19,6 +19,11 @@
                     templateUrl: 'app/front/main.html',
                     controller: 'FrontHomeController',
                     controllerAs: 'vm'
+                },
+                'front-footer@': {
+                    templateUrl: 'app/front/footer.html',
+                    controller: 'FrontFooterController',
+                    controllerAs: 'vm'
                 }
             },
             resolve: {

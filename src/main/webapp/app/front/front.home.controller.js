@@ -38,7 +38,7 @@
             id: currIndex++
         });
         slides.push({
-            image: '/content/images/front/ipad_pro_family_large.jpg',
+            image: '/content/images/front/environment_earth_day_large.jpg',
             text: ['Nice image 2','cool','That is so cool','I love that'][slides.length % 4],
             id: currIndex++
         });
