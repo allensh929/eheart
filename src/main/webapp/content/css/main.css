@@ -1,6 +1,6 @@
 body {
     background: #FFFFFF; /*#fafafa*/
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
 
@@ -392,13 +392,22 @@ ul#strengthBar {
     height: 200px;
 }
 
+.promo-apple-tv {
+    display: block;
+    border-right: 2px solid #fff;
+    background-image: url('../images/front/apple_tv_large.jpg');
+    background-size: cover;
+    width: auto;
+    height: 200px;
+}
+
 a:visited, a:link, a:active, a:hover {
     text-decoration: none;
 }
 
 .eh-footer {
     background-color: #006EBC;
-    color: #000;
+    color: #FFFFFF;
     min-height: 200px;
 }
 .eh-footer-logo {
@@ -410,13 +419,21 @@ a:visited, a:link, a:active, a:hover {
     margin-top: 20px;
 }
 .eh-footer div > a {
-    color: #000;
+    color: #FFFFFF;
 }
 .eh-footer div > ul > li > a {
-    color: #000;
+    color: #FFFFFF;
 }
 
 .eh-footer div > ul,  .eh-footer div > ul > li{
     padding-left: 0;
     display: inline;
+}
+
+.eh-brand-title {
+    font-size: 18px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
