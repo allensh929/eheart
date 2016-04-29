@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -7,7 +7,7 @@
 
     FrontHomeController.$inject = ['$scope', 'Principal', 'LoginService'];
 
-    function FrontHomeController ($scope, Principal, LoginService) {
+    function FrontHomeController($scope, Principal, LoginService) {
         var vm = this;
         console.debug('FrontHomeController start');
 
@@ -34,17 +34,31 @@
         var currIndex = 0;
         slides.push({
             image: '/content/images/front/environment_earth_day_large.jpg',
-            text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+            style: {
+                'background-image': 'url(/content/images/front/environment_earth_day_large.jpg)',
+                'background-size': 'cover'
+            },
+            text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 4],
             id: currIndex++
         });
         slides.push({
             image: '/content/images/front/ipad_pro_family_medium.jpg',
-            text: ['Nice image 2','cool','That is so cool','I love that'][slides.length % 4],
+            style: {
+                'background-image': 'url(/content/images/front/ipad_pro_family_medium.jpg)',
+                'background-size': 'cover'
+            },
+            text: ['Nice image 2', 'cool', 'That is so cool', 'I love that'][slides.length % 4],
             id: currIndex++
         });
         slides.push({
             image: '/content/images/front/apple_watch_trio_large.jpg',
-            text: ['Nice image 3','cool','That is so cool','I love that'][slides.length % 4],
+            style: {
+                'background-image': 'url(/content/images/front/apple_watch_trio_large.jpg)',
+                'background-size': '50% 50%',
+                'background-position': '50% 50%',
+                'background-repeat': 'no-repeat'
+            },
+            text: ['Nice image 3', 'cool', 'That is so cool', 'I love that'][slides.length % 4],
             id: currIndex++
         });
 

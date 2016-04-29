@@ -351,6 +351,10 @@ ul#strengthBar {
     border: none;
 }
 
+.carousel-bg{
+    min-height: 200px;
+}
+
 .carousel-control.left {
     background-image: none;
 }
@@ -358,7 +362,6 @@ ul#strengthBar {
 .carousel-control.right {
     background-image: none;
 }
-
 .carousel-indicators li {
     display: inline-block;
     width: 10px;
